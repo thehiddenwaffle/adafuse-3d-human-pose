@@ -131,7 +131,7 @@ def main():
     torch.backends.cudnn.deterministic = config.CUDNN.DETERMINISTIC
     torch.backends.cudnn.enabled = config.CUDNN.ENABLED
 
-    backbone_model = eval('models.' + config.BACKBONE_MODEL + '.get_pose_net')(
+    backbone_model = eval('lib.models.' + config.BACKBONE_MODEL + '.get_pose_net')(
         config, is_train=True)
     model = models.adafuse_network.get_multiview_pose_net(
         backbone_model, config)
