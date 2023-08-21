@@ -11,10 +11,10 @@ from __future__ import print_function
 
 import numpy as np
 
-from core.config import config
-from dataset.joints_dataset import JointsDataset
-from dataset.multiview_h36m import MultiViewH36M
-from dataset.mpii import MPIIDataset
+from lib.core.config import config
+from .joints_dataset import JointsDataset
+from .multiview_h36m import MultiViewH36M
+from .mpii import MPIIDataset
 
 
 class MixedDataset(JointsDataset):

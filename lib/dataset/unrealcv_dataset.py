@@ -9,8 +9,8 @@ import collections
 from operator import itemgetter
 import logging
 
-from dataset.joints_dataset import JointsDataset
-import multiviews.cameras as cam_utils
+from .joints_dataset import JointsDataset
+import lib.multiviews.cameras as cam_utils
 
 
 logger = logging.getLogger()

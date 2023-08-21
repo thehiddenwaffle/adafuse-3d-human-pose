@@ -14,7 +14,7 @@ import os.path as osp
 import numpy as np
 import json_tricks as json
 
-from dataset.joints_dataset import JointsDataset
+from .joints_dataset import JointsDataset
 
 
 class MultiviewMPIIDataset(JointsDataset):

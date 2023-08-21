@@ -8,7 +8,7 @@
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
-
-import models.pose_resnet
-import models.adafuse_network
-import models.multiview_pose_resnet
+2
+from .pose_resnet import *
+from .adafuse_network import *
+from .multiview_pose_resnet import *

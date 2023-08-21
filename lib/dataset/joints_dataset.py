@@ -18,9 +18,9 @@ import os.path as osp
 import torch
 from torch.utils.data import Dataset
 
-from utils.transforms import get_affine_transform
-from utils.transforms import affine_transform
-import multiviews.cameras as cam_utils
+from lib.utils.transforms import get_affine_transform
+from lib.utils.transforms import affine_transform
+import lib.multiviews.cameras as cam_utils
 
 
 class JointsDataset(Dataset):

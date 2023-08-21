@@ -21,18 +21,18 @@ import numpy as np
 from git import Repo
 
 import _init_paths
-from core.config import config
-from core.config import update_config
-from core.config import update_dir
-from core.config import get_model_name
-from core.loss import JointsMSELoss, JointMPJPELoss
-from core.adafuse_function import run_model
-from utils.utils import save_checkpoint, load_checkpoint
-from utils.utils import create_logger
-import dataset
-import models
+from lib.core.config import config
+from lib.core.config import update_config
+from lib.core.config import update_dir
+from lib.core.config import get_model_name
+from lib.core.loss import JointsMSELoss, JointMPJPELoss
+from lib.core.adafuse_function import run_model
+from lib.utils.utils import save_checkpoint, load_checkpoint
+from lib.utils.utils import create_logger
+import lib.dataset
+import lib.models as models
 
-from dataset.adafuse_collate import adafuse_collate
+from lib.dataset.adafuse_collate import adafuse_collate
 
 
 def str2bool(v):

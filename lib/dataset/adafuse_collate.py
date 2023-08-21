@@ -1,7 +1,7 @@
 import torch
 import numpy as np
 
-import multiviews.cameras_cuda_col as cameras_utils
+import lib.multiviews.cameras_cuda_col as cameras_utils
 
 
 def adafuse_collate(data):

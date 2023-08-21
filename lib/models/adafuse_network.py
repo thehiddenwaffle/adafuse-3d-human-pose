@@ -15,11 +15,11 @@ import torch.nn.functional as F
 import numpy as np
 import random
 
-from models.epipolar_fusion_layer import CamFusionModule, get_inv_cam, get_inv_affine_transform
-from models.ada_weight_layer import ViewWeightNet
-from models.soft_argmax import SoftArgmax2D
-from core.loss import Joint2dSmoothLoss
-from dataset import get_joint_mapping
+from .epipolar_fusion_layer import CamFusionModule, get_inv_cam, get_inv_affine_transform
+from .ada_weight_layer import ViewWeightNet
+from .soft_argmax import SoftArgmax2D
+from lib.core.loss import Joint2dSmoothLoss
+from lib.dataset import get_joint_mapping
 
 
 np.seterr(divide='raise')

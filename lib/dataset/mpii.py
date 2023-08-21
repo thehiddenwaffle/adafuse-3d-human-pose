@@ -15,7 +15,7 @@ import numpy as np
 import pickle
 import json_tricks as json
 
-from dataset.joints_dataset import JointsDataset
+from .joints_dataset import JointsDataset
 
 
 class MPIIDataset(JointsDataset):

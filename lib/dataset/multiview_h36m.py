@@ -14,8 +14,8 @@ import numpy as np
 import pickle
 import collections
 
-from dataset.joints_dataset import JointsDataset
-import multiviews.cameras as cam_utils
+from lib.dataset.joints_dataset import JointsDataset
+import lib.multiviews.cameras as cam_utils
 
 
 class MultiViewH36M(JointsDataset):
